@@ -46,17 +46,17 @@
            -->
 
            
-            <nav class="navbar navbar-expand-xxl fixed-top">
+            <!--<nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
-                     <a href="#" class="navbar-brad col-xxl-3" id="logo">
-                         <img src="img/logonav.svg" class="logo" alt="">
+                     <a href="#" class="navbar-brad col-xxl-3 col-lg-3" id="logo">
+                         <img src="img/logonav.svg" class="logo" alt="лого">
                          <span class="logotext">Kerma & Kerdos</span>
                      </a>
                      
                      
                      <div class="collapse navbar-collapse col-xxl-5" id="navbarSupportedContent">
                         
-                         <ul class="navbar-nav me-auto">
+                         <ul class="navbar-nav col-md-11 text-center me-auto">
                              <li class="nav-item"><a href="#" class="nav-link" id="li__a">Как получить</a></li>
                              <li class="nav-item"><a href="#" class="nav-link" id="li__a">О нас</a></li>
                              <li class="nav-item"><a href="#" class="nav-link" id="li__a">Отзывы</a></li>
@@ -69,11 +69,67 @@
                         <a href="#" class="shine-button">Заказать звонок</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span><img src="img/burger.svg" alt=""></span>
+                        <span><img src="img/burger.svg" alt="меню"></span>
                       </button>
+                      
                     
                 </div>
-            </nav>
+            </nav> -->
+
+
+
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a href="#" class="navbar-brad col-xxl-3 col-lg-3" id="logo">
+                        <img src="img/logonav.svg" class="logo" alt="лого">
+                        <span class="logotext">Kerma & Kerdos</span>
+                    </a>
+                    <div class="collapse navbar-collapse col-xxl-5" id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav col-md-11 text-center me-auto">
+                            <li class="nav-item"><a href="#" class="nav-link" id="li__a">Как получить</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="li__a">О нас</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="li__a">Отзывы</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="li__a">Контакты</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="header__contacts">
+                       <a href="#" id="a__namber">8-800-700-8706</a>
+                       <a href="#" class="shine-button">Заказать звонок</a>
+                   </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"><img src="img/burger.svg" alt="меню"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a href="#" class="nav-link" id="li__a">Как получить</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="li__a">О нас</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="li__a">Отзывы</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="li__a">Контакты</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Выпадающий список
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
            
         
     </header>
@@ -81,18 +137,29 @@
     <main>
         <div class="container">
             <div class="row block-1">
-                <section class="col-xxl-5">
+                <section class="col-xxl-5 col-xl-6 col-lg-7 col-xs-2">
                     <div class="block-1__text">
                         <h1>Займы на вашу карту за <span>20 минут</span></h1>
-                        <p>Выдаём займы без&nbspсправок с&nbspработы и&nbspпоручителей. Нужен только паспорт РФ.</p>
+                        <p class="col-xxl-10 col-9">Выдаём займы без&nbspсправок с&nbspработы и&nbspпоручителей. Нужен только паспорт РФ.</p>
                         <p>До <b>15 000</b> рублей, &nbspдо <b>21</b> дня — 0%</p>
                     </div>
                     <a href="#" class="cta" id="cta">Получить деньги</a>
                     
                 </section>
-                <section class="col-xxl-7 ">
+                <section class="col-xxl-7 col-xl-6 col-lg-6 d-none d-md-block secmainimg">
                     <img src="img/mainimg.png" class="mainimg" alt="">
                 </section>
+            </div>
+
+            <div class="row block-2 text-center">
+                <h2>Наши преимущества</h2>
+                <div class="row">
+                    <div class="preimush col-3 text-center">
+                        <img src="img/colorfilter.svg" alt="Первое преимущество">
+                        <p>Финансовое консультирование по кредитованию всех слоёв населения</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
