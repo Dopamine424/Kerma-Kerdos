@@ -210,14 +210,117 @@ h1 span{
 .block-2{
     margin-top: 160px !important;
 }
-.block-2 h2{
-    font-size: 60px;
+h2{
+    font-size: 60px !important;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-
+    color: #333955;
+    margin-bottom: 70px !important;
+    line-height: 150% !important;
+}
+.block-2 p{
+    margin-top: 20px;
+    font-size: 20px !important;
+    font-weight: 700;
+    color: #333955;
+    line-height: 150% !important;
+}
+.cards{
+    
 }
 
 
+/*----------------- block-3 -------------------------*/
+
+.block-3{
+    margin-top: 160px !important;
+}
+
+.block-3 .text{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.block-3 .text p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.block-3 .text span{
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 150%;
+    
+}
+
+
+
+
+/*----------------- block-4 -------------------------*/
+
+.block-4{
+    margin-top: 160px !important;
+}
+.block-4 h2{
+    margin-bottom: 30px !important;
+}
+.block-4 p{
+    margin-bottom: 25px;
+    
+    font-size: 20px;
+    line-height: 150%; 
+
+}
+.block-4 span{
+    color:#24C74B;
+    font-weight: 700;
+}
+.block-4 form{
+    background: white;
+    padding: 47px 65px;
+    border-radius: 50px;
+    min-height: 452px;
+}
+.block-4 label{
+    margin-top: 30px;
+}
+.block-4 form input{
+    padding: 15px 34px;
+    border-radius: 60px;
+}
+.block-4 .sec{
+    margin-bottom: 50px !important;
+}
+.block-4 .btn{
+    font-size: 18px !important;
+    text-decoration: none !important;
+    color: white !important;
+    padding: 15px 78px !important;
+    border-radius: 60px !important;
+    min-height: 60px !important;
+    background-image: linear-gradient(to right, #1aaf3d 0%, #54F079 100%) !important;
+    background-size: 150% auto !important;
+    transition: .5s !important;
+}
+.btn:hover {
+    color: white !important;
+    background-position: right center !important;
+}
+.block-4 .form-text span{
+    color:#24C74B;
+    font-weight: normal;
+}
+.block-4 .form-text{
+    margin-top: 10px;
+}
+.block-4 .form-label span{
+    color:red;
+}
+.block-4 h2{
+    width: 530px;
+}
 
 
 
@@ -273,9 +376,46 @@ h1 span{
     }
 }
 @media(max-width:992px){
+
+    .block-1, .block-2, .block-3, .block-4{
+        margin-top: 120px !important;
+    }
+
     .mainimg{
         display: none;
     }
+    h2{
+        font-size: 52px !important;
+    }
+    .block-2 p{
+        font-size: 15px !important;
+    }
+    .block-2 .cards p{
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .block-3 .stages{
+        
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding-left: 25% !important;
+        
+        min-height: 324px;
+    }
+    .block-3 .arrow{
+        display: none;
+    }
+    .block-4 .sections{
+        flex-direction: column !important;
+    }
+    .block-4 .section{
+        margin-bottom: 70px;
+    }
+    .block-4 h2{
+        width: 340px;
+    }
+
     
 }
 @media(max-width:768px){
@@ -285,18 +425,56 @@ h1 span{
     .block-1__text h1{
         font-size: 52px !important;
     }
+    h2{
+        font-size: 38px !important;
+    }
+    .block-3 .stages{
+        padding-left: 20% !important;
+    }
+    .block-4 p {
+        font-size: 18px;
+    }
+    
 }
 @media(max-width:576){
+    .block-1, .block-2, .block-3, .block-4{
+        margin-top: 100px !important;
+    }
+    .container{
+        padding: 20px !important;
+    }
     .block-1__text h1{
         font-size: 32px !important;
     }
     .block-1__text p{
         font-size: 18px !important;
     }
+    h2{
+        font-size: 32px !important;
+    }
+    .block-2 .cards{
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+    .block-4 h2{
+        
+    }
+    .block-4 p {
+        font-size: 15px;  
+    }
+    .block-4 span {
+        font-size: 15px;
+    }
+    
+
 }
 @media(max-width:426px){
     .shine-button{
         display: none;
+    }
+    .block-3 .stage img{
+        margin-left: -20% !important;
     }
 }
 
