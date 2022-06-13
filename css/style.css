@@ -5,6 +5,15 @@ body{
     font-family: 'Roboto', sans-serif !important;
     background: #F8F8F8 !important;
 }
+.vector{
+    position: absolute;
+    width: 849px;
+    height: 762px;
+    left: -386px;
+    top: 2489px;
+    z-index: -1;
+}
+
 /*-------------- header -------------------*/
 
 .logo__section {
@@ -281,7 +290,7 @@ h2{
     background: white;
     padding: 47px 65px;
     border-radius: 50px;
-    min-height: 452px;
+    max-height: 500px;
 }
 .block-4 label{
     margin-top: 30px;
@@ -311,6 +320,7 @@ h2{
 .block-4 .form-text span{
     color:#24C74B;
     font-weight: normal;
+    text-decoration: underline;
 }
 .block-4 .form-text{
     margin-top: 10px;
@@ -321,6 +331,168 @@ h2{
 .block-4 h2{
     width: 530px;
 }
+
+
+
+
+/*------------------- block-5 ---------------------*/
+
+.block-5{
+    margin-top: 160px !important;
+}
+
+.block-5 .card{
+    padding: 25px 30px !important;
+    border-radius: 20px;
+    border: none;
+    max-width: 420px;
+}
+.bl-5__sec1{
+    margin-right: 18px;
+}
+.bl-5__sec1 p{
+    color: #333955;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+.bl-5__sec1 span{
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333955;
+    opacity: 0.7;
+}
+.bl-5__sec1 img{
+    margin-top: 5px;
+}
+.bl-5__sec2{
+    margin-top: 20px;
+}
+.bl-5__sec2 p{
+    font-size: 22px;
+    font-weight: 700;
+    color: #333955;
+}
+.bl-5__sec2 span{
+    font-size: 18px;
+    color: #333955;
+    line-height: 150%;
+    font-weight: normal;
+}
+.block-5 .card{
+    display: flex;
+    flex-direction: row;
+}
+.bl-5__sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bl-5__sec1 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+/*----------------footer-----------------------*/
+
+footer{
+    margin-top: 160px !important;
+    background-color: white;
+    padding: 72px 0;
+}
+.footer-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333955;
+    line-height: 150%;
+    font-weight: normal;
+    opacity: 0.7;
+    max-width: 320px;
+}
+.soc{
+    margin-top: 18px;
+}
+.soc a{
+    text-decoration: none;
+}
+.soc svg{
+    margin-right: 20px;
+    fill: #24C74B !important;
+    transition: fill 0.2s ease-in-out;
+}
+.soc svg:hover{
+    fill:#40f46a !important;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    max-width: 171px;
+}
+footer span{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333955;
+}
+.sec-1{
+    min-width: 317px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sec-1 .logotext{
+    width: 300px !important;
+}
+.sec-4 .pay{
+    margin-top: 65px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pay img{
+
+}
+.sec-4 .shine-button{
+    margin-left: 0px;
+}
+.footer-block{
+    display: flex !important;
+    flex-direction: row !important;
+    
+    justify-content: space-between;
+}
+.sec-4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.shine-button_2, .pay2{
+    display: none;
+}
+.pay3{
+    display: none ;
+}
+
+
+
+
 
 
 
@@ -346,6 +518,36 @@ h2{
     .navbar-nav{
         margin: 0 auto;
     }
+    .block-5 .card{
+        max-width: 360px;
+    }
+    .bl-5__sec2 span{
+        font-size: 16px;
+    }
+    .bl-5__sec2 p{
+        font-size: 20px;
+    }
+    .bl-5__sec1 p{
+        font-size: 17px;
+    }
+    .bl-5__sec1 span{
+        font-size: 16px;
+    }
+    .vector{
+        position: absolute;
+        width: 533px;
+        height: 478px;
+        left: -266px;
+        top: 2761px;
+    }
+
+    .pay img{
+        margin-right: 30px;
+    }
+    .sec-2{
+        margin-left: 60px;
+    }
+
 }
 @media(max-width: 1199px){
     .secmainimg{
@@ -374,11 +576,55 @@ h2{
         margin: 0 auto;
         
     }
+    .block-5 .cards{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .block-5 .card{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        min-height: 260px;
+    }
+    .vector{
+        position: absolute;
+        width: 533px;
+        height: 478px;
+        left: -292px;
+        top: 3062px;    
+    }
+    .sec-4 .pay{
+        margin-top: 65px;
+        width: 180px !important;
+        height: 20px !important;
+        
+        
+    }
+    .sec-4 .pay img{
+        margin-right: 5px !important;
+
+    }
+    .sec-2{
+        margin-left: -40px !important;
+        margin-right: -40px !important;
+    }
+    .sec-3{
+        margin-right: -40px !important;
+        margin-left: -40px !important;
+    }
+    .sec-4{
+        margin-left: -40px !important;
+        width: 250px;
+    }
+    
+
 }
 @media(max-width:992px){
 
-    .block-1, .block-2, .block-3, .block-4{
+    .block-2, .block-3, .block-4{
         margin-top: 120px !important;
+    }
+    .block-1{
+       margin-top: 20px !important; 
     }
 
     .mainimg{
@@ -412,14 +658,36 @@ h2{
     .block-4 .section{
         margin-bottom: 70px;
     }
-    .block-4 h2{
-        width: 340px;
+    
+    .vector{
+        position: absolute;
+        width: 533px;
+        height: 478px;
+        left: -262px;
+        top: 3638px;   
     }
-
+    .sec-4{
+        display: none !important;
+    }
+    .shine-button_2{
+        display: block;
+        width: 210px;
+        margin: 0px;
+        margin-top: 30px;
+    }
+    .pay2{
+        display: flex;
+        margin-top: 34px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: space-between;
+        width: 200px !important;
+        height: 20px !important;
+    }
     
 }
 @media(max-width:768px){
-    .logotext{
+    .navbar .logotext{
         display: none;
     }
     .block-1__text h1{
@@ -434,9 +702,50 @@ h2{
     .block-4 p {
         font-size: 18px;
     }
+    .block-4 h2{
+        width: 340px;
+    }
+
+    .vector{
+        position: absolute;
+        width: 533px;
+        height: 478px;
+        left: -350px;
+        top: 4091px;  
+    }
+    .sec-1{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-block{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .sec-1__1{
+        width: 240px;
+    }
+    .sec-1{
+        width: 510px;
+        margin-bottom: 30px;
+        
+        margin-right: 0px;
+    }
+    .sec-3{
+        margin-left: 65px !important;
+    }
+    .pay2{
+        display: none;
+    }
+    .pay3{
+        width: 300px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
     
 }
-@media(max-width:576){
+@media(max-width:576px){
     .block-1, .block-2, .block-3, .block-4{
         margin-top: 100px !important;
     }
@@ -456,9 +765,8 @@ h2{
         display: flex !important;
         flex-direction: column !important;
         flex-wrap: wrap !important;
-    }
-    .block-4 h2{
-        
+        margin: 0 auto;
+
     }
     .block-4 p {
         font-size: 15px;  
@@ -466,15 +774,137 @@ h2{
     .block-4 span {
         font-size: 15px;
     }
-    
+
+    .vector{
+        position: absolute;
+        width: 533px;
+        height: 478px;
+        left: -262px;
+        top: 4338px;   
+    }
+    .sec-1{
+        display: block;
+        
+    }
+    .footer-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .sec-3{
+        margin-left: 30px !important;
+    }
+    .block-1{
+        margin-top: 0px !important;
+    }
 
 }
 @media(max-width:426px){
-    .shine-button{
+    .header__contacts .shine-button{
         display: none;
     }
     .block-3 .stage img{
         margin-left: -20% !important;
+    }
+    .block-4 form{
+        max-height: 600px;
+    }
+
+    .vector{
+        position: absolute;
+        width: 533px;
+        height: 478px;
+        left: -262px;
+        top: 4638px;   
+    }
+    .sec-1{
+        
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    .sec-1__1{
+        width: 250px;
+    }
+    .cta{
+        padding: 20px 40px;
+    }
+    .block-3 img{
+        width: 60px;
+        height: 60px;
+    }
+    .pay3{
+        width:100%;
+
+    }
+    .block-5 .card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bl-5__sec1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .bl-5__sec1 .content{
+        margin-left: 20px;
+    }
+    .block-5{
+        width: 290px;
+        margin: 0 auto !important;
+    }
+    .block-4 .section{
+       width: 100% !important; 
+    }
+    .block-4 .section h2, .block-4 .section p{
+        width: 277px !important;
+     }
+    .block-4 form{
+        padding: 47px 30px;
+    }
+    .block-4 .btn{
+        padding: 20px 30px !important;
+        margin: 0 auto !important;
+        
+        font-size: 16px !important;
+    }
+    
+}
+@media(max-width:335px){
+    
+
+    .sec-1{
+        margin-left: -15px;
+        margin-right: 0px;
+    }
+    .pay3{
+        height: 20px;
+    }
+    .footer-block{
+        width: 100% !important;
+    }
+    .sec-1 p{
+        width: 250px;
+    }
+    .sec-3{
+      margin-top: 230px;
+      margin-left: -105px !important;
+    }
+    .footer-block{
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    .pay3{
+        margin-bottom: 0;
+    }
+    .block-5, .block-4, .block-3, .block-2{
+        margin-top: 100px !important;
+    }
+    .sec-1__1{
+        width: 250px;
     }
 }
 
